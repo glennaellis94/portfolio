@@ -98,7 +98,7 @@ header nav ul li a:hover {
 }
 
 .education {
-	width: 25%;
+	width: 35%;
 	/*text-align: center;*/
 }
 .container h3 {
@@ -118,7 +118,7 @@ header nav ul li a:hover {
 	display: flex;
 }*/
 .skills {
-	width: 25%;
+	width: 35%;
 	/*display: flex;*/
 }
 .skill-list {
@@ -140,7 +140,10 @@ header nav ul li a:hover {
 }
 
 .Work-History {
-	width: 25%;
+	width: 40%;
+}
+.Work-History h3 {
+	font-size: 30px;
 }
 .Work-History h4 {
 	font-size: 24px;
@@ -158,37 +161,70 @@ header nav ul li a:hover {
 .temp1 {
 	display: flex;
 	flex-wrap: wrap;
-	justify-content: space-between;
-	padding-bottom: 10px;
+	justify-content: space-around;
+
+	width: auto;
 	scroll-margin-top: 6em;
+	border-top: 2px solid white;
+	border-bottom: 2px solid white;
 }
 .project-title {
-	width: 10%;
-	border-right: 1px solid black;
+	width: auto;
+	border-right: 2px solid white;
+	align-items: center;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+}
+.project-title h2 {
+	padding-right: 10px;
+	text-align: center;
+	font-size: 30px;
 }
 .work-section-container {
-	width: 90%;
 	display: flex;
+	flex-wrap: wrap;
 	flex-direction: column;
+	justify-content: space-around;
+	width: auto;
 }
 .temp1 img {
 	border: 2px solid white;
 }
 .recent-work {
-	width: 200px;
+	width: auto;
+}
+.recent-work img {
+	width: auto;
 }
 .old-work-container {
 	display: flex;
-	width: 100%;
-}
-.old-work img {
-	width: 100px;
+	flex-wrap: wrap;
+	width: auto;
 	justify-content: space-around;
 }
+.old-work-container img {
+	width: 300px;
+}
 
-.contact-info img {
-	width: 200px;
-	height: 200px;
+.contact-info {
+	display: flex;
+	justify-content: space-around;
+	flex-direction: column;
+}
+.contact-info h2 {
+	font-size: 30px;
+}
+.contacts {
+	font-size: 26px;
+}
+.ci {
+	display: flex;
+	justify-content: space-around;
+}
+.contacts {
+	display: flex;
+	justify-content: space-around;
 }
 
 /* MEDIA QUERY FOR SMALLER DESKTOP SCREENS AND SMALLER */
