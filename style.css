@@ -11,8 +11,21 @@
 body {
 	color: var(--tertiary-color);
 	font-family: Helvetica, Arial, sans-serif;
+	background-color: rgb(212, 233, 247);
 	/*apply styles to <header>*/
 }
+.hero {
+	background-image: url("./images/hero.webp");
+	height: 200px;
+	background-size: cover;
+	background-position: center;
+	/*position: relative;*/
+	display: flex;
+	justify-content: flex-start;
+	flex-wrap: wrap;
+	align-items: flex-start;
+}
+
 header {
 	padding: 20px 35px;
 	background-color: var(--tertiary-color);
@@ -63,39 +76,116 @@ header nav ul li a:hover {
 	border-radius: 15px;
 	text-shadow: none;
 }
-.aboutme {
-	margin: 50px auto;
-	padding-bottom: 50px;
-	width: 80%;
-	border-bottom: 1px solid var(--tertiary-color);
+.container {
 	display: flex;
 	flex-wrap: wrap;
-	align-items: center;
 	justify-content: space-between;
+
+	padding-bottom: 10px;
+
+	scroll-margin-top: 6em;
+}
+.aboutme {
+	width: 20%;
+	/*align-content: center;*/
+	justify-content: flex-start;
 }
 .aboutme h2 {
-	color: var(--secondary-color);
-	font-size: 46px;
-	flex: 1 30%;
-	border-right: 1px solid black;
-	margin-right: 20px;
-	display: inline;
-	align-items: center;
+	text-align: center;
 }
-.aboutme h3 {
-	align-items: flex-end;
-	flex-wrap: wrap;
+.aboutme img {
+	max-width: 100%;
+}
+
+.education {
+	width: 25%;
+	/*text-align: center;*/
+}
+.container h3 {
+	text-align: center;
+	font-size: 28px;
+	border-bottom: 1px solid black;
+	margin: 10px;
+	padding-bottom: 5px;
+}
+.schools {
 	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	flex-wrap: wrap;
 }
-.aboutme div {
+/*.school img {
+	display: flex;
+}*/
+.skills {
+	width: 25%;
+	/*display: flex;*/
+}
+.skill-list {
+	display: flex;
+	margin-top: 10px;
+	flex-wrap: wrap;
+	justify-content: space-around;
+}
+.skills h4 {
+	text-align: center;
+	font-size: 24px;
+	border-bottom: 1px solid black;
+	margin-bottom: 10px;
+	margin-left: auto;
+	padding-bottom: 5px;
+}
+.skills li {
+	font-size: 20px;
+}
+
+.Work-History {
+	width: 25%;
+}
+.Work-History h4 {
+	font-size: 24px;
+}
+.Work-History p {
+	font-size: 20px;
+	padding-bottom: 15px;
+}
+.schools img {
+	height: 50px;
+	width: 50px;
+	margin-left: 5px;
+	margin-right: 5px;
+}
+.temp1 {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	padding-bottom: 10px;
+	scroll-margin-top: 6em;
+}
+.project-title {
+	width: 10%;
+	border-right: 1px solid black;
+}
+.work-section-container {
+	width: 90%;
 	display: flex;
 	flex-direction: column;
 }
-.aboutme img {
-	height: 50px;
-	width: 50px;
-	border: 1px solid black;
+.temp1 img {
+	border: 2px solid white;
 }
+.recent-work {
+	width: 200px;
+}
+.old-work-container {
+	display: flex;
+	width: 100%;
+}
+.old-work img {
+	width: 100px;
+	justify-content: space-around;
+}
+
 .contact-info img {
 	width: 200px;
 	height: 200px;
